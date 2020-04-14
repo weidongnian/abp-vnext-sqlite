@@ -1,0 +1,19 @@
+POST  https://localhost:44387/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+{
+  client_id:"BookStore_App",
+  client_secret:"1q2w3e*",
+  grant_type:"password",
+  username:"admin",
+  password:"1q2w3E*"
+}
+
+POST  https://localhost:44387/api/account/login
+Content-Type: application/json
+
+{
+  "userNameOrEmailAddress": "wdn",
+  "password": "1q2w3E*",
+  "rememberMe": true
+}
