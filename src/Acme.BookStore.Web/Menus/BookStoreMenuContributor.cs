@@ -1,4 +1,4 @@
-﻿using System.Threading.Tasks;
+using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Localization;
 using Acme.BookStore.Localization;
@@ -35,6 +35,9 @@ namespace Acme.BookStore.Web.Menus
                     .AddItem(new ApplicationMenuItem("BooksStore.Books", l["Menu:Books"], url: "/Books"))
             );
 
+            context.Menu.AddItem(
+                new ApplicationMenuItem("News", l["Menu:News"], "/Acme/BookStore/News")
+            );
         }
     }
 }

@@ -3,6 +3,16 @@
   "texts": {
     "Menu:Home": "Trang chủ",
     "Welcome": "Chào mừng bạn",
-    "LongWelcomeMessage": "Chào mừng bạn đến ứng dụng. Đây là một dự án khởi nghiệp dựa trên khung ABP. Để biết thêm thông tin, hãy truy cập abp.io."
+    "LongWelcomeMessage": "Chào mừng bạn đến ứng dụng. Đây là một dự án khởi nghiệp dựa trên khung ABP. Để biết thêm thông tin, hãy truy cập abp.io.",
+    "Menu:News": "MenuNews",
+    "News": "News",
+    "NewsName": "NewsName",
+    "NewsType": "NewsType",
+    "NewsPublishDate": "NewsPublishDate",
+    "NewsPrice": "NewsPrice",
+    "CreateNews": "CreateNews",
+    "EditNews": "EditNews",
+    "NewsDeletionConfirmationMessage": "Are you sure to delete the news {0}?",
+    "SuccessfullyDeleted": "Successfully deleted"
   }
 }

@@ -1,0 +1,49 @@
+@page
+@using Acme.BookStore.Web.Pages.Acme.BookStore.News
+@using Volo.Abp.AspNetCore.Mvc.UI.Layout
+@inherits Acme.BookStore.Web.Pages.BookStorePage
+@model IndexModel
+@inject IPageLayout PageLayout
+@{
+    PageLayout.Content.Title = L["News"].Value;
+    PageLayout.Content.BreadCrumb.Add(L["Menu:News"].Value);
+    PageLayout.Content.MenuItemName = "News";
+}
+
+@section scripts
+{
+    <abp-script src="/Pages/Acme/BookStore/News/index.js" />
+}
+@section styles
+{
+    <abp-style src="/Pages/Acme/BookStore/News/index.css"/>
+}
+
+<abp-card>
+    <abp-card-header>
+        <abp-row>
+            <abp-column size-md="_6">
+                <abp-card-title>@L["News"]</abp-card-title>
+            </abp-column>
+            <abp-column size-md="_6" class="text-right">
+                <abp-button id="NewNewsButton"
+                            text="@L["CreateNews"].Value"
+                            icon="plus"
+                            button-type="Primary" />
+            </abp-column>
+        </abp-row>
+    </abp-card-header>
+    <abp-card-body>
+        <abp-table striped-rows="true" id="NewsTable" class="nowrap">
+            <thead>
+            <tr>
+                <th>@L["Actions"]</th>
+                <th>@L["NewsName"]</th>
+                <th>@L["NewsType"]</th>
+                <th>@L["NewsPublishDate"]</th>
+                <th>@L["NewsPrice"]</th>
+            </tr>
+            </thead>
+        </abp-table>
+    </abp-card-body>
+</abp-card>

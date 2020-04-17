@@ -1,10 +1,11 @@
-﻿using Acme.BookStore.Users;
+using Acme.BookStore.Users;
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.Modeling;
 using Volo.Abp.Identity;
 using Volo.Abp.Users.EntityFrameworkCore;
+using Acme.BookStore;
 
 namespace Acme.BookStore.EntityFrameworkCore {
     /* This is your actual DbContext used on runtime.
@@ -25,6 +26,7 @@ namespace Acme.BookStore.EntityFrameworkCore {
         /* Add DbSet properties for your Aggregate Roots / Entities here.
          * Also map them inside BookStoreDbContextModelCreatingExtensions.ConfigureBookStore
          */
+        public DbSet<News> News { get; set; }
 
         public BookStoreDbContext (DbContextOptions<BookStoreDbContext> options) : base (options) {
 

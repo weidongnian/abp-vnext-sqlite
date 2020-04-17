@@ -1,4 +1,6 @@
-﻿using AutoMapper;
+using Acme.BookStore;
+using Acme.BookStore.Dtos;
+using AutoMapper;
 
 namespace Acme.BookStore
 {
@@ -13,6 +15,10 @@ namespace Acme.BookStore
             CreateMap<Book, BookDto>();
             
             CreateMap<CreateUpdateBookDto, Book>();
+
+            CreateMap<News, NewsDto>();
+            CreateMap<CreateNewsDto, News>(MemberList.Source);
+            CreateMap<UpdateNewsDto, News>(MemberList.Source);
         }
     }
 }

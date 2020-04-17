@@ -12,6 +12,6 @@ namespace Acme.BookStore
             CreateUpdateBookDto, //用于创建书籍
             CreateUpdateBookDto> //用于更新书籍
     {
-
+        Task<string> GetName();
     }
 }

@@ -7,6 +7,15 @@
     "Menu:Books": "Books",
     "BookDeletionConfirmationMessage": "Are you sure to delete the book {0}?",
     "SuccessfullyDeleted": "Successfully deleted",
-    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io."
+    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io.",
+    "Menu:News": "MenuNews",
+    "News": "News",
+    "NewsName": "NewsName",
+    "NewsType": "NewsType",
+    "NewsPublishDate": "NewsPublishDate",
+    "NewsPrice": "NewsPrice",
+    "CreateNews": "CreateNews",
+    "EditNews": "EditNews",
+    "NewsDeletionConfirmationMessage": "Are you sure to delete the news {0}?"
   }
 }

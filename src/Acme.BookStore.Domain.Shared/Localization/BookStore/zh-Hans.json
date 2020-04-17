@@ -1,12 +1,21 @@
 {
-    "culture": "zh-Hans",
-    "texts": {
-      "Menu:Home": "首页",
-      "Welcome": "欢迎",
-      "Menu:BookStore": "书屋",
-      "Menu:Books": "书籍列表",
-      "BookDeletionConfirmationMessage": "确定删除当前书籍 {0}?",
-      "SuccessfullyDeleted": "书籍删除成功",
-      "LongWelcomeMessage": "欢迎来到该应用程序. 这是一个基于ABP框架的启动项目. 有关更多信息, 请访问 abp.io."
-    }
+  "culture": "zh-Hans",
+  "texts": {
+    "Menu:Home": "首页",
+    "Welcome": "欢迎",
+    "Menu:BookStore": "书屋",
+    "Menu:Books": "书籍列表",
+    "BookDeletionConfirmationMessage": "确定删除当前书籍 {0}?",
+    "SuccessfullyDeleted": "书籍删除成功",
+    "LongWelcomeMessage": "欢迎来到该应用程序. 这是一个基于ABP框架的启动项目. 有关更多信息, 请访问 abp.io.",
+    "Menu:News": "MenuNews",
+    "News": "News",
+    "NewsName": "NewsName",
+    "NewsType": "NewsType",
+    "NewsPublishDate": "NewsPublishDate",
+    "NewsPrice": "NewsPrice",
+    "CreateNews": "CreateNews",
+    "EditNews": "EditNews",
+    "NewsDeletionConfirmationMessage": "Are you sure to delete the news {0}?"
   }
+}
